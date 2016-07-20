@@ -6,6 +6,11 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Minecraft.ttf">
+            <string>Minecraft</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -31,8 +36,7 @@
                                     <constraint firstAttribute="width" constant="240" id="izV-WK-z4V"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="-30" translatesAutoresizingMaskIntoConstraints="NO" id="l1p-GJ-jOs">
-                                <frame key="frameInset" minX="-197" minY="28" width="894" height="610"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-30" translatesAutoresizingMaskIntoConstraints="NO" id="l1p-GJ-jOs">
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="YFB-dz-OWm">
                                         <constraints>
@@ -48,8 +52,7 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h5u-BD-3sf" userLabel="Button Stack View">
-                                <frame key="frameInset" minX="125" minY="185" width="245" height="415"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h5u-BD-3sf" userLabel="Button Stack View">
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eqa-2y-PJO">
                                         <subviews>
@@ -178,25 +181,33 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQI-fS-Sqm">
-                                <frame key="frameInset" minX="40" minY="14" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4556" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQI-fS-Sqm">
+                                <frame key="frameInset" minX="173" minY="108" width="200" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Wbh-at-AC0"/>
+                                    <constraint firstAttribute="width" constant="200" id="pBW-Wc-Mw3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cck-8d-3cq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-40" id="3Rg-oq-Ci4"/>
+                            <constraint firstItem="wQI-fS-Sqm" firstAttribute="trailing" secondItem="l1p-GJ-jOs" secondAttribute="trailing" constant="-330" id="E7F-ee-Ga5"/>
                             <constraint firstItem="cck-8d-3cq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-36" id="EWD-1l-UcH"/>
+                            <constraint firstAttribute="bottom" secondItem="7W7-dK-nVy" secondAttribute="bottom" constant="-80" id="FtS-2g-GRW"/>
+                            <constraint firstItem="wQI-fS-Sqm" firstAttribute="top" secondItem="l1p-GJ-jOs" secondAttribute="top" constant="62" id="QtB-xh-IGG"/>
+                            <constraint firstAttribute="bottom" secondItem="7W7-dK-nVy" secondAttribute="bottom" constant="-50" id="TKj-pG-wDB"/>
                             <constraint firstAttribute="bottom" secondItem="cck-8d-3cq" secondAttribute="bottom" constant="-20" id="azA-hu-WBg"/>
+                            <constraint firstAttribute="bottom" secondItem="7W7-dK-nVy" secondAttribute="bottom" constant="-20" id="bl7-HA-gZP"/>
+                            <constraint firstAttribute="bottom" secondItem="7W7-dK-nVy" secondAttribute="bottom" constant="-30" id="fnm-7o-IG9"/>
                             <constraint firstItem="l1p-GJ-jOs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gZp-YK-Jv0"/>
                             <constraint firstItem="l1p-GJ-jOs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hbh-vj-a1a"/>
                             <constraint firstAttribute="trailing" secondItem="cck-8d-3cq" secondAttribute="trailing" id="hj7-vi-1Yz"/>
                             <constraint firstItem="h5u-BD-3sf" firstAttribute="centerX" secondItem="l1p-GJ-jOs" secondAttribute="centerX" id="iRZ-Pg-H8b"/>
                             <constraint firstItem="h5u-BD-3sf" firstAttribute="centerY" secondItem="l1p-GJ-jOs" secondAttribute="centerY" constant="65" id="s73-Lw-dcY"/>
-                            <constraint firstAttribute="bottom" secondItem="7W7-dK-nVy" secondAttribute="bottom" id="yhc-Ta-WA1"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
